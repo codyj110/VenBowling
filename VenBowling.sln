@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenBowling", "VenBowling\VenBowling.csproj", "{A96FBB86-9FDC-4DC5-88CB-83035F32608A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenBowlingTests", "VenBowlingTests\VenBowlingTests.csproj", "{AB6D3286-A528-44AA-81DA-0A8341CCC7A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A96FBB86-9FDC-4DC5-88CB-83035F32608A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96FBB86-9FDC-4DC5-88CB-83035F32608A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96FBB86-9FDC-4DC5-88CB-83035F32608A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96FBB86-9FDC-4DC5-88CB-83035F32608A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB6D3286-A528-44AA-81DA-0A8341CCC7A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB6D3286-A528-44AA-81DA-0A8341CCC7A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB6D3286-A528-44AA-81DA-0A8341CCC7A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB6D3286-A528-44AA-81DA-0A8341CCC7A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
