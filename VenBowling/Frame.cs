@@ -2,9 +2,9 @@ using System.Collections.Generic;
 
 namespace VenBowling
 {
-    public struct Frame
+    public class Frame
     {
-        public IEnumerable<Roll> Rolls { get; set; }
+        public List<Roll> Rolls = new();
         public int PinsRemaining { get; set; }
     }
 }

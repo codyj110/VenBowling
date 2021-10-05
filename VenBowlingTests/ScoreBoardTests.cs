@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using VenBowling;
@@ -31,6 +30,27 @@ namespace VenBowlingTests
             // clean up
             WriteLines.Clear();
         }
+        
+        [Fact]
+        public void ScoreBoardDrawsScore()
+        {
+            // setup
+            var param = 110;
+            var expectedText =  $"Total Score: {param}";
+            var expectedCount = 1;
+            
+            var scoreboard = new MockedConsoleScoreBoard();
+            
+            // act
+            scoreboard.DisplayScore(110);
+            var actualCount = WriteLines.Count(l => l.Contains(expectedText));
+
+            // assert
+            Assert.Equal(expectedCount, actualCount);
+            
+            // clean up
+            WriteLines.Clear();
+        }
 
         [Fact]
         public void ScoreBoardDrawsHeader()
@@ -56,7 +76,7 @@ namespace VenBowlingTests
         public void ScoreBoardDrawsFrame()
         {
             // setup
-            var expectedFrame = $" {"Frame0",-10} | {"1",-10} | {"2",-10} | {"3",-10} |\r\n";
+            var expectedFrame = $" {"Frame1",-10} | {"1",-10} | {"2",-10} | {"3",-10} |\r\n";
             var expectedCount = 1;
 
             var scoreboard = new MockedConsoleScoreBoard();
@@ -78,7 +98,7 @@ namespace VenBowlingTests
             // setup
             var expectedBoarder =  "-----------------------------------------------";
             var expectedHeader = $" {"Frame",-10} | {"Roll1",-10} | {"Roll2",-10} | {"Roll3",-10} |";
-            var expectedFrame = $" {"Frame0",-10} | {"1",-10} | {"2",-10} | {"3",-10} |\r\n";
+            var expectedFrame = $" {"Frame1",-10} | {"1",-10} | {"2",-10} | {"3",-10} |\r\n";
             var expectedCount = 1;
 
             var scoreboard = new MockedConsoleScoreBoard();

@@ -5,13 +5,18 @@ namespace VenBowling
 {
     public class ConsoleScoreBoard: IScoreBoard
     {
+        public void DisplayScore(int score)
+        {
+            WriteLine($"Total Score: {score}");
+        }
+        
         public void DisplayBoard(Game game)
         {
             DrawBorder();
             DrawHeaders();
             foreach (var gameFrame in game.Frames.Select((frame, i) => (frame, i)))
             {
-                var frameName = $"Frame{gameFrame.i}";
+                var frameName = $"Frame{gameFrame.i + 1}";
                 DrawFrames(gameFrame.frame, frameName);
                 NewLine();
             }
