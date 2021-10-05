@@ -99,7 +99,6 @@ namespace VenBowlingTests
             var expectedBoarder =  "-----------------------------------------------";
             var expectedHeader = $" {"Frame",-10} | {"Roll1",-10} | {"Roll2",-10} | {"Roll3",-10} |";
             var expectedFrame = $" {"Frame1",-10} | {"1",-10} | {"2",-10} | {"3",-10} |\r\n";
-            var expectedCount = 1;
 
             var scoreboard = new MockedConsoleScoreBoard();
             
